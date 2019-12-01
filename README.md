@@ -39,8 +39,6 @@ python3 object_detection/create_tf_record.py
 Once the script finishes running, you will end up with a `train.record` and a `val.record` file. This is what we will use to train the model.
 
 ### 2) Download a Base Model
-Training an object detector from scratch can take days, even when using multiple GPUs! In order to speed up training, we’ll take an object detector trained on a different dataset, and reuse some of it’s parameters to initialize our new model.
-
 You can find models to download from this [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Each model varies in accuracy and speed. I used `ssd_inception_v2_coco` for the demo.
 
 Extract the files and move all the `model.ckpt` to our models directory.
