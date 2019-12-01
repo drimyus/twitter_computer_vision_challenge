@@ -1,1 +1,81 @@
-{"filename": "2.jpg", "size": {"width": 1440, "height": 1422}, "object": [{"name": "following_button", "bndbox": {"xmin": 1093, "ymin": 24, "xmax": 1304, "ymax": 89}}, {"name": "following_button", "bndbox": {"xmin": 1091, "ymin": 225, "xmax": 1304, "ymax": 296}}, {"name": "following_button", "bndbox": {"xmin": 1093, "ymin": 396, "xmax": 1306, "ymax": 459}}, {"name": "following_button", "bndbox": {"xmin": 1089, "ymin": 595, "xmax": 1306, "ymax": 666}}, {"name": "following_button", "bndbox": {"xmin": 1093, "ymin": 839, "xmax": 1304, "ymax": 908}}, {"name": "following_button", "bndbox": {"xmin": 1089, "ymin": 1007, "xmax": 1308, "ymax": 1074}}, {"name": "following_button", "bndbox": {"xmin": 1095, "ymin": 1208, "xmax": 1306, "ymax": 1281}}, {"name": "following_button", "bndbox": {"xmin": 1093, "ymin": 1375, "xmax": 1308, "ymax": 1422}}]}
+{
+  "filename": "2.jpg",
+  "size": {
+    "width": 400,
+    "height": 395
+  },
+  "object": [
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 303.61111111111114,
+        "ymin": 6.666666666666667,
+        "xmax": 362.22222222222223,
+        "ymax": 24.722222222222225
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 303.05555555555554,
+        "ymin": 62.5,
+        "xmax": 362.22222222222223,
+        "ymax": 82.22222222222223
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 303.61111111111114,
+        "ymin": 110.0,
+        "xmax": 362.77777777777777,
+        "ymax": 127.5
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 302.5,
+        "ymin": 165.27777777777777,
+        "xmax": 362.77777777777777,
+        "ymax": 185.0
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 303.61111111111114,
+        "ymin": 233.05555555555557,
+        "xmax": 362.22222222222223,
+        "ymax": 252.22222222222223
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 302.5,
+        "ymin": 279.72222222222223,
+        "xmax": 363.33333333333337,
+        "ymax": 298.33333333333337
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 304.1666666666667,
+        "ymin": 335.55555555555554,
+        "xmax": 362.77777777777777,
+        "ymax": 355.83333333333337
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 303.61111111111114,
+        "ymin": 381.94444444444446,
+        "xmax": 363.33333333333337,
+        "ymax": 395.0
+      }
+    }
+  ]
+}

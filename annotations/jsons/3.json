@@ -1,1 +1,81 @@
-{"filename": "3.jpg", "size": {"width": 1564, "height": 1550}, "object": [{"name": "following_button", "bndbox": {"xmin": 1057, "ymin": 93, "xmax": 1274, "ymax": 159}}, {"name": "following_button", "bndbox": {"xmin": 1059, "ymin": 255, "xmax": 1274, "ymax": 330}}, {"name": "following_button", "bndbox": {"xmin": 1066, "ymin": 463, "xmax": 1270, "ymax": 525}}, {"name": "following_button", "bndbox": {"xmin": 1063, "ymin": 634, "xmax": 1265, "ymax": 694}}, {"name": "following_button", "bndbox": {"xmin": 1063, "ymin": 835, "xmax": 1269, "ymax": 897}}, {"name": "following_button", "bndbox": {"xmin": 1059, "ymin": 1041, "xmax": 1276, "ymax": 1103}}, {"name": "following_button", "bndbox": {"xmin": 1063, "ymin": 1243, "xmax": 1269, "ymax": 1305}}, {"name": "following_button", "bndbox": {"xmin": 1059, "ymin": 1411, "xmax": 1274, "ymax": 1473}}]}
+{
+  "filename": "3.jpg",
+  "size": {
+    "width": 400,
+    "height": 396
+  },
+  "object": [
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 270.33248081841435,
+        "ymin": 23.785166240409207,
+        "xmax": 325.8312020460358,
+        "ymax": 40.66496163682865
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 270.843989769821,
+        "ymin": 65.21739130434783,
+        "xmax": 325.8312020460358,
+        "ymax": 84.3989769820972
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 272.63427109974424,
+        "ymin": 118.41432225063939,
+        "xmax": 324.80818414322255,
+        "ymax": 134.27109974424553
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 271.8670076726343,
+        "ymin": 162.14833759590795,
+        "xmax": 323.5294117647059,
+        "ymax": 177.49360613810742
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 271.8670076726343,
+        "ymin": 213.55498721227622,
+        "xmax": 324.5524296675192,
+        "ymax": 229.41176470588238
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 270.843989769821,
+        "ymin": 266.2404092071611,
+        "xmax": 326.34271099744245,
+        "ymax": 282.0971867007673
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 271.8670076726343,
+        "ymin": 317.9028132992328,
+        "xmax": 324.5524296675192,
+        "ymax": 333.7595907928389
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 270.843989769821,
+        "ymin": 360.8695652173913,
+        "xmax": 325.8312020460358,
+        "ymax": 376.72634271099747
+      }
+    }
+  ]
+}

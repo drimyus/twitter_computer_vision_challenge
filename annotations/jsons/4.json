@@ -1,1 +1,72 @@
-{"filename": "4.jpg", "size": {"width": 1484, "height": 1538}, "object": [{"name": "following_button", "bndbox": {"xmin": 1090, "ymin": 128, "xmax": 1303, "ymax": 192}}, {"name": "following_button", "bndbox": {"xmin": 1088, "ymin": 367, "xmax": 1301, "ymax": 437}}, {"name": "following_button", "bndbox": {"xmin": 1090, "ymin": 611, "xmax": 1301, "ymax": 677}}, {"name": "following_button", "bndbox": {"xmin": 1090, "ymin": 778, "xmax": 1301, "ymax": 844}}, {"name": "following_button", "bndbox": {"xmin": 1088, "ymin": 985, "xmax": 1303, "ymax": 1049}}, {"name": "following_button", "bndbox": {"xmin": 1088, "ymin": 1185, "xmax": 1303, "ymax": 1249}}, {"name": "following_button", "bndbox": {"xmin": 1088, "ymin": 1387, "xmax": 1308, "ymax": 1451}}]}
+{
+  "filename": "4.jpg",
+  "size": {
+    "width": 400,
+    "height": 415
+  },
+  "object": [
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 293.8005390835579,
+        "ymin": 34.501347708894876,
+        "xmax": 351.2129380053908,
+        "ymax": 51.75202156334231
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 293.26145552560644,
+        "ymin": 98.92183288409703,
+        "xmax": 350.67385444743934,
+        "ymax": 117.78975741239891
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 293.8005390835579,
+        "ymin": 164.69002695417788,
+        "xmax": 350.67385444743934,
+        "ymax": 182.4797843665768
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 293.8005390835579,
+        "ymin": 209.70350404312666,
+        "xmax": 350.67385444743934,
+        "ymax": 227.49326145552558
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 293.26145552560644,
+        "ymin": 265.4986522911051,
+        "xmax": 351.2129380053908,
+        "ymax": 282.7493261455525
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 293.26145552560644,
+        "ymin": 319.40700808625337,
+        "xmax": 351.2129380053908,
+        "ymax": 336.6576819407008
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 293.26145552560644,
+        "ymin": 373.85444743935307,
+        "xmax": 352.5606469002695,
+        "ymax": 391.1051212938005
+      }
+    }
+  ]
+}

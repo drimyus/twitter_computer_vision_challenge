@@ -1,1 +1,90 @@
-{"filename": "1.jpg", "size": {"width": 1336, "height": 1778}, "object": [{"name": "following_button", "bndbox": {"xmin": 1057, "ymin": 117, "xmax": 1268, "ymax": 188}}, {"name": "following_button", "bndbox": {"xmin": 1059, "ymin": 320, "xmax": 1270, "ymax": 386}}, {"name": "following_button", "bndbox": {"xmin": 1052, "ymin": 500, "xmax": 1270, "ymax": 563}}, {"name": "following_button", "bndbox": {"xmin": 1059, "ymin": 630, "xmax": 1267, "ymax": 693}}, {"name": "following_button", "bndbox": {"xmin": 1054, "ymin": 833, "xmax": 1267, "ymax": 899}}, {"name": "following_button", "bndbox": {"xmin": 1059, "ymin": 1074, "xmax": 1265, "ymax": 1143}}, {"name": "following_button", "bndbox": {"xmin": 1054, "ymin": 1275, "xmax": 1267, "ymax": 1346}}, {"name": "following_button", "bndbox": {"xmin": 1059, "ymin": 1478, "xmax": 1270, "ymax": 1552}}, {"name": "following_button", "bndbox": {"xmin": 1057, "ymin": 1684, "xmax": 1270, "ymax": 1758}}]}
+{
+  "filename": "1.jpg",
+  "size": {
+    "width": 400,
+    "height": 532
+  },
+  "object": [
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 316.46706586826343,
+        "ymin": 35.029940119760475,
+        "xmax": 379.6407185628742,
+        "ymax": 56.287425149700596
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 317.065868263473,
+        "ymin": 95.80838323353292,
+        "xmax": 380.2395209580838,
+        "ymax": 115.56886227544909
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 314.9700598802395,
+        "ymin": 149.7005988023952,
+        "xmax": 380.2395209580838,
+        "ymax": 168.562874251497
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 317.065868263473,
+        "ymin": 188.62275449101796,
+        "xmax": 379.34131736526945,
+        "ymax": 207.48502994011974
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 315.5688622754491,
+        "ymin": 249.40119760479038,
+        "xmax": 379.34131736526945,
+        "ymax": 269.16167664670655
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 317.065868263473,
+        "ymin": 321.5568862275449,
+        "xmax": 378.74251497005986,
+        "ymax": 342.2155688622754
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 315.5688622754491,
+        "ymin": 381.73652694610774,
+        "xmax": 379.34131736526945,
+        "ymax": 402.9940119760479
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 317.065868263473,
+        "ymin": 442.5149700598802,
+        "xmax": 380.2395209580838,
+        "ymax": 464.67065868263467
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 316.46706586826343,
+        "ymin": 504.191616766467,
+        "xmax": 380.2395209580838,
+        "ymax": 526.3473053892216
+      }
+    }
+  ]
+}

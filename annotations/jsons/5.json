@@ -1,1 +1,81 @@
-{"filename": "5.jpg", "size": {"width": 1372, "height": 1766}, "object": [{"name": "following_button", "bndbox": {"xmin": 1044, "ymin": 272, "xmax": 1263, "ymax": 338}}, {"name": "following_button", "bndbox": {"xmin": 1044, "ymin": 441, "xmax": 1266, "ymax": 507}}, {"name": "following_button", "bndbox": {"xmin": 1054, "ymin": 683, "xmax": 1263, "ymax": 749}}, {"name": "following_button", "bndbox": {"xmin": 1049, "ymin": 888, "xmax": 1256, "ymax": 956}}, {"name": "following_button", "bndbox": {"xmin": 1052, "ymin": 1062, "xmax": 1261, "ymax": 1123}}, {"name": "following_button", "bndbox": {"xmin": 1052, "ymin": 1266, "xmax": 1259, "ymax": 1329}}, {"name": "following_button", "bndbox": {"xmin": 1052, "ymin": 1508, "xmax": 1266, "ymax": 1571}}, {"name": "following_button", "bndbox": {"xmin": 1049, "ymin": 71, "xmax": 1261, "ymax": 132}}]}
+{
+  "filename": "5.jpg",
+  "size": {
+    "width": 400,
+    "height": 515
+  },
+  "object": [
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 304.3731778425656,
+        "ymin": 79.30029154518951,
+        "xmax": 368.22157434402334,
+        "ymax": 98.54227405247813
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 304.3731778425656,
+        "ymin": 128.57142857142858,
+        "xmax": 369.09620991253644,
+        "ymax": 147.8134110787172
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 307.28862973760937,
+        "ymin": 199.1253644314869,
+        "xmax": 368.22157434402334,
+        "ymax": 218.3673469387755
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 305.83090379008746,
+        "ymin": 258.8921282798834,
+        "xmax": 366.18075801749274,
+        "ymax": 278.71720116618076
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 306.7055393586006,
+        "ymin": 309.6209912536443,
+        "xmax": 367.6384839650146,
+        "ymax": 327.4052478134111
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 306.7055393586006,
+        "ymin": 369.09620991253644,
+        "xmax": 367.05539358600583,
+        "ymax": 387.463556851312
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 306.7055393586006,
+        "ymin": 439.6501457725948,
+        "xmax": 369.09620991253644,
+        "ymax": 458.01749271137027
+      }
+    },
+    {
+      "name": "following_button",
+      "bndbox": {
+        "xmin": 305.83090379008746,
+        "ymin": 20.699708454810498,
+        "xmax": 367.6384839650146,
+        "ymax": 38.48396501457726
+      }
+    }
+  ]
+}
