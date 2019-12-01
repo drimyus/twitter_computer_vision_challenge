@@ -2,5 +2,3 @@
 venv
 raw
 models
-train.record
-val.record
