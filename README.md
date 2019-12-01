@@ -2,7 +2,7 @@
 # Twitter Computer Vision Challenge
 Taking the above images as the training set, output the coordinates for the bounding boxes contain the twitter “following button”
 
-**Why Object Detection?**
+**Result image**
 ![](test/output/result.jpg)
 
 ## Installation
