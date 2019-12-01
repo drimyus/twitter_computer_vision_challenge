@@ -2,9 +2,6 @@
 # Twitter Computer Vision Challenge
 Taking the above images as the training set, output the coordinates for the bounding boxes contain the twitter “following button”
 
-**Result image**
-![](test/output/result.jpg)
-
 ## Installation
 
 First, with python and pip3 installed, install the scripts requirements:
@@ -85,3 +82,4 @@ It will run your object detection model found at `output_inference_graph/frozen_
 
 ## Results
 Here’s what I got from running my model over testing image
+![](test/output/result.jpg)
