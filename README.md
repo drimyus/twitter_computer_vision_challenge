@@ -3,7 +3,7 @@
 Taking the above images as the training set, output the coordinates for the bounding boxes contain the twitter “following button”
 
 **Why Object Detection?**
-![](raw/images/1.jpg)
+![](test/output/result.jpg)
 
 ## Installation
 
@@ -54,16 +54,9 @@ Run the following script to train the model:
 python3 object_detection/train.py \
         --logtostderr \
         --train_dir=train \
-        --pipeline_config_path=models/ssd_inception/ssd_inception_v2_coco.config
+        --pipeline_config_path=models/ssd_inception_v2_coco.config
 ```
 
-
-```bash
-python3 object_detection/train.py \
-        --logtostderr \
-        --train_dir=train \
-        --pipeline_config_path=models/faster_rcnn/faster_rcnn_resnet50.config
-```
 
 ### 4) Export the Inference Graph
 When you model is ready depends on your training data, the more data, the more steps you’ll need. My model was pretty solid at ~4.5k steps. Then, at about ~20k steps, it peaked. I even went on and trained it for 200k steps, but it didn’t get any better.
@@ -85,15 +78,7 @@ In order to use the model, you first need to convert the checkpoint files (`mode
 python3 object_detection/export_inference_graph.py \
         --input_type image_tensor \
         --pipeline_config_path models/ssd_inception_v2_coco.config \
-        --trained_checkpoint_prefix train/model.ckpt-5000 \
-        --output_directory output_inference_graph
-```
-
-```bash
-python3 object_detection/export_inference_graph.py \
-        --input_type image_tensor \
-        --pipeline_config_path models/faster_rcnn_resnet50.config \
-        --trained_checkpoint_prefix train/model.ckpt-5000 \
+        --trained_checkpoint_prefix train/model.ckpt-NUMBER \
         --output_directory output_inference_graph
 ```
 
