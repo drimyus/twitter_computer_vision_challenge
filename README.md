@@ -76,8 +76,8 @@ In order to use the model, you first need to convert the checkpoint files (`mode
 ```bash
 python3 object_detection/export_inference_graph.py \
         --input_type image_tensor \
-        --pipeline_config_path faster_rcnn_resnet101.config \
-        --trained_checkpoint_prefix model.ckpt-STEP_NUMBER \
+        --pipeline_config_path models/ssd_inception_v2_coco.config \
+        --trained_checkpoint_prefix model.ckpt-100 \
         --output_directory output_inference_graph
 ```
 
