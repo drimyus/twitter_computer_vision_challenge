@@ -59,7 +59,33 @@ def via_anno2json(via_anno_file):
             json.dump(anno_info, jp)
 
 
+def validate_annotation(image_dir, annotation_dir):
+    anno_paths = [os.path.join(annotation_dir, fn) for fn in os.listdir(annotation_dir) if
+                  os.path.splitext(fn)[1] == '.json']
+    for anno_path in anno_paths:
+        with open(anno_path, 'r') as jp:
+            data = json.load(jp)
+
+        img = cv2.imread(os.path.join(image_dir, data['filename']))
+
+        for obj in data['object']:
+            x1 = int(obj['bndbox']['xmin'])
+            y1 = int(obj['bndbox']['ymin'])
+            x2 = int(obj['bndbox']['xmax'])
+            y2 = int(obj['bndbox']['ymax'])
+
+            cv2.rectangle(img, (x2, y2), (x1, y1), (0, 0, 255), 2)
+
+        cv2.imshow("show", cv2.resize(img, None, fx=0.5, fy=0.5))
+        cv2.waitKey(0)
+
+
 if __name__ == '__main__':
 
     # png2jpg(folder=IMG_DIR)
-    via_anno2json(os.path.join(DATA_DIR, 'via_project_1Dec2019_13h8m.json'))
+
+    # via_anno2json(via_anno_file=os.path.join(DATA_DIR, 'via_project_1Dec2019_13h8m.json'))
+
+    image_dir = "../images"
+    annotation_dir = "../annotations/jsons"
+    validate_annotation(image_dir, annotation_dir)

@@ -19,11 +19,13 @@ from utils import label_map_util
 
 from multiprocessing.dummy import Pool as ThreadPool
 
-MAX_NUMBER_OF_BOXES = 10
-MINIMUM_CONFIDENCE = 0.9
+MAX_NUMBER_OF_BOXES = 20
+MINIMUM_CONFIDENCE = 0.5
 
 PATH_TO_LABELS = 'annotations/label_map.pbtxt'
-PATH_TO_TEST_IMAGES_DIR = 'test_images'
+PATH_TO_TEST = 'test'
+PATH_TO_TEST_IMAGES_DIR = os.path.join(PATH_TO_TEST, 'test_images')
+PATH_TO_TEST_OUTPUT = os.path.join(PATH_TO_TEST, 'output')
 
 label_map = label_map_util.load_labelmap(PATH_TO_LABELS)
 categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=sys.maxsize,
@@ -65,7 +67,8 @@ def detect_objects(image_path):
     fig.add_axes(ax)
 
     plt.imshow(image_np, aspect='auto')
-    plt.savefig('output/{}'.format(image_path), dpi=62)
+
+    plt.savefig(os.path.join(PATH_TO_TEST_OUTPUT, os.path.basename(image_path)), dpi=62)
     plt.close(fig)
 
 
