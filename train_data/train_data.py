@@ -93,9 +93,6 @@ if __name__ == '__main__':
 
     # via_anno2json(via_anno_file=os.path.join(DATA_DIR, 'via_project_1Dec2019_13h8m.json'))
 
-    # image_dir = "../images"
-    # annotation_dir = "../annotations/jsons"
-    # validate_annotation(image_dir, annotation_dir)
-
-    img = cv2.imread('/home/be/Documents/Workspace/Twitter/twitter_computer_vision_challenge/test/test_images/test.jpg')
-    cv2.imwrite('/home/be/Documents/Workspace/Twitter/twitter_computer_vision_challenge/test/test_images/test.png', img)
+    image_dir = "../images"
+    annotation_dir = "../annotations/jsons"
+    validate_annotation(image_dir, annotation_dir)
