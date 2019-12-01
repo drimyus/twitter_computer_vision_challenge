@@ -41,11 +41,11 @@ Once the script finishes running, you will end up with a `train.record` and a `v
 ### 2) Download a Base Model
 Training an object detector from scratch can take days, even when using multiple GPUs! In order to speed up training, we’ll take an object detector trained on a different dataset, and reuse some of it’s parameters to initialize our new model.
 
-You can find models to download from this [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Each model varies in accuracy and speed. I used `faster_rcnn_inception_v2_coco` for the demo.
+You can find models to download from this [model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md). Each model varies in accuracy and speed. I used `ssd_inception_v2_coco` for the demo.
 
 Extract the files and move all the `model.ckpt` to our models directory.
 
->_**Note:** If you don't use `ssd_inception_v2_coco`, replace `ssd_inception_v2_coco.config` with the corresponding config file.
+>_**Note:** If you don't use `faster_rcnn_resnet50`, replace `faster_rcnn_resnet50.config` with the corresponding config file.
 
 ### 3) Train the Model
 Run the following script to train the model:
@@ -55,6 +55,14 @@ python3 object_detection/train.py \
         --logtostderr \
         --train_dir=train \
         --pipeline_config_path=models/ssd_inception_v2_coco.config
+```
+
+
+```bash
+python3 object_detection/train.py \
+        --logtostderr \
+        --train_dir=train \
+        --pipeline_config_path=models/faster_rcnn_resnet50.config
 ```
 
 ### 4) Export the Inference Graph
@@ -77,7 +85,7 @@ In order to use the model, you first need to convert the checkpoint files (`mode
 python3 object_detection/export_inference_graph.py \
         --input_type image_tensor \
         --pipeline_config_path models/ssd_inception_v2_coco.config \
-        --trained_checkpoint_prefix model.ckpt-100 \
+        --trained_checkpoint_prefix train/model.ckpt-1000 \
         --output_directory output_inference_graph
 ```
 

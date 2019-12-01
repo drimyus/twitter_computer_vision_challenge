@@ -33,20 +33,26 @@ def via_anno2json(via_anno_file):
         anno_info = _via_img_metadata[key]
         img_file_name = anno_info['filename']
         objects = []
+
+        anno_file_name = os.path.join(ANNO_DIR, os.path.splitext(img_file_name)[0] + ".json")
+        img = cv2.imread(os.path.join(IMG_DIR, os.path.splitext(img_file_name)[0] + '.jpg'))
+
+        r = 400 / img.shape[1]
+        img = cv2.resize(img, None, fx=r, fy=r)
+        cv2.imwrite(os.path.join(IMG_DIR, os.path.splitext(img_file_name)[0] + '.jpg'), img)
+
         for region in anno_info['regions']:
             objects.append({
                 'name': 'following_button',
                 'bndbox': {
-                    'xmin': region['shape_attributes']['x'],
-                    'ymin': region['shape_attributes']['y'],
-                    'xmax': region['shape_attributes']['x'] + region['shape_attributes']['width'],
-                    'ymax': region['shape_attributes']['y'] + region['shape_attributes']['height']
+                    'xmin': region['shape_attributes']['x'] * r,
+                    'ymin': region['shape_attributes']['y'] * r,
+                    'xmax': (region['shape_attributes']['x'] + region['shape_attributes']['width']) * r,
+                    'ymax': (region['shape_attributes']['y'] + region['shape_attributes']['height']) * r
 
                 }
             })
 
-        anno_file_name = os.path.join(ANNO_DIR, os.path.splitext(img_file_name)[0] + ".json")
-        img = cv2.imread(os.path.join(IMG_DIR, os.path.splitext(img_file_name)[0] + '.jpg'))
         with open(anno_file_name, 'w') as jp:
             anno_info = {
                 'filename': os.path.splitext(img_file_name)[0] + '.jpg',
@@ -67,6 +73,7 @@ def validate_annotation(image_dir, annotation_dir):
             data = json.load(jp)
 
         img = cv2.imread(os.path.join(image_dir, data['filename']))
+        print(img.shape[:2])
 
         for obj in data['object']:
             x1 = int(obj['bndbox']['xmin'])
@@ -76,7 +83,7 @@ def validate_annotation(image_dir, annotation_dir):
 
             cv2.rectangle(img, (x2, y2), (x1, y1), (0, 0, 255), 2)
 
-        cv2.imshow("show", cv2.resize(img, None, fx=0.5, fy=0.5))
+        cv2.imshow("show", cv2.resize(img, None, fx=1.0, fy=1.0))
         cv2.waitKey(0)
 
 
@@ -86,6 +93,9 @@ if __name__ == '__main__':
 
     # via_anno2json(via_anno_file=os.path.join(DATA_DIR, 'via_project_1Dec2019_13h8m.json'))
 
-    image_dir = "../images"
-    annotation_dir = "../annotations/jsons"
-    validate_annotation(image_dir, annotation_dir)
+    # image_dir = "../images"
+    # annotation_dir = "../annotations/jsons"
+    # validate_annotation(image_dir, annotation_dir)
+
+    img = cv2.imread('/home/be/Documents/Workspace/Twitter/twitter_computer_vision_challenge/test/test_images/test.jpg')
+    cv2.imwrite('/home/be/Documents/Workspace/Twitter/twitter_computer_vision_challenge/test/test_images/test.png', img)
